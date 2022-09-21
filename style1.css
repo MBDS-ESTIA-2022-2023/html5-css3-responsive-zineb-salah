@@ -1,0 +1,80 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+a{
+text-decoration:none;
+color:#FFFFFF;
+}
+b{
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 180%;
+}
+.container {
+display:grid;
+height:100%;
+grid-template-columns: 100%;
+grid-template-rows: 8% 5% 82% 5%;
+grid-template-areas:
+"header"
+"item-a"
+"item-b"
+"footer";
+}
+.header{
+    grid-area: header;
+    background-color:rgb(2, 160, 253);
+    font-size: 110% ;
+    color:#FFFFFF;/*Couleur de fond*/
+}
+.item-a {
+grid-area: item-a;
+display:grid;
+height:100%;
+grid-template-columns: 50% 50%;
+grid-template-rows: 100%;
+text-align: center;
+background-color:rgb(2, 160, 253);
+}
+.item-b {
+display:grid;
+grid-template-columns: 30% 70% ;
+grid-template-rows: 32% 32% 36%;
+grid-template-areas:"item-b1 item-b2.";
+margin-top:1%;
+}
+.item-b1 {
+max-width:90%;
+height:100%;
+width:100%;
+}
+.item-b3 {
+max-width:90%;
+height:90%;
+width:100%;
+margin-top: 2%;
+}
+.item-b2 {
+border-style: outset;
+display: flex;
+flex-direction: column;
+}
+.item-b4{
+display:grid;
+grid-template-columns: 50% 50% ;
+grid-template-rows: auto;
+grid-template-areas:"time prix";
+margin-top:1%;
+}
+#prix{
+	margin-left: 90%;
+}
+
+footer{
+	background-color: rgb(2, 160, 253);
+	color: #FFFFFF;
+	text-indent: 3%;
+}

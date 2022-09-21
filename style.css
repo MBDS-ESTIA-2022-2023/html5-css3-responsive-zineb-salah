@@ -1,0 +1,76 @@
+html, body, .container {height: 100%; margin: 0; padding: 0;}
+
+.container{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 10% 80% 10%;
+	grid-template-areas: 
+	          "header"
+	          "content"
+	          "footer";
+	justify-content: stretch;
+}
+
+.content{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50% 40% 10%;
+	grid-template-areas: 
+	          "Welcome"
+	          "signin"
+	          "sign_in";
+	justify-content: stretch;
+}
+
+.signin{
+	margin-bottom:5%;
+grid-area: signin;
+text-align:center;
+display: flex;
+flex-direction: column;
+}
+
+input{
+	margin-top: 3%;
+
+    width: 70%;
+    height: 15%;
+
+    margin-left: 20%;
+}
+
+
+
+header{
+	grid-area: header;
+	background-color: rgb(2, 160, 253);
+	color: whitesmoke;
+	text-indent: 4%;
+}
+
+
+.Welcome{
+	text-align: center;
+grid-area: Welcome;
+background-color:gainsboro;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+img{
+	margin-top:1%;
+max-width:15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+
+
+footer{
+	background-color: rgb(2, 160, 253);
+	color: whitesmoke;
+	text-indent: 3%;
+}
+
